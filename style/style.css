@@ -1,0 +1,33 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Droppable {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.Draggable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    color: black;
+    width: 20rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: grab;
+}
+
+.Draggable.dragging {
+    opacity: 0;
+    cursor: grabbing;
+}
