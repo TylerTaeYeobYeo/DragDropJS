@@ -12,5 +12,3 @@ for (let i = 0; i < 6; i++) {
 
 app.appendChild(left);
 app.appendChild(right);
-
-console.log("main");

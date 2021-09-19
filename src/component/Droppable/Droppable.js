@@ -1,5 +1,3 @@
-import { IDHelper } from "../../core/IDhelper.js";
-
 export class Droppable {
     $droppable;
     constructor(id) {
@@ -8,7 +6,7 @@ export class Droppable {
         const droppable = document.createElement("section");
         droppable.classList.add("Droppable");
         droppable.style.transition = "all 0.1s";
-        if (IDHelper.register(id)) {
+        if (id) {
             droppable.id = id;
         }
         this.$droppable = droppable;

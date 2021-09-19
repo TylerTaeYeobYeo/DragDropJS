@@ -1,5 +1,3 @@
-import { IDHelper } from "../../core/IDhelper.js";
-
 export class Draggable {
     $draggable
     constructor(id, info) {
@@ -7,7 +5,7 @@ export class Draggable {
         draggable.classList.add("Draggable");
         draggable.draggable = true;
         draggable.style.transition = "all 0.1s";
-        if (IDHelper.register(id)) {
+        if (id) {
             draggable.id = id;
         }
         if (info) {
