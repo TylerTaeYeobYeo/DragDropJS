@@ -1,5 +1,5 @@
 export class Draggable {
-    $draggable
+    $draggable;
     constructor(id, info) {
         const draggable = document.createElement("div");
         draggable.classList.add("Draggable");
